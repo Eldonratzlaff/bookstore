@@ -35,9 +35,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Math Magicians <a name="about-project"></a>
+# 📖 Reakt Book Store <a name="about-project"></a>
 
-> "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: make simple calculations, read a random math-related quote. By building this application,I will learn how to use React.
+> The Bookstore is a website similar to the "Awesome Books" website built in the previous module.
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -76,7 +76,7 @@
 
 >
 -Live demo will be added soon
-<!-- - [Live Demo Link](https://github.com/Eldonratzlaff/mathMagicians)-->
+<!-- - [Live Demo Link](https://github.com/Eldonratzlaff/bookstore)-->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,7 +103,7 @@ Clone this repository to your desired folder:
 ```sh
   mkdir my-folder
   cd my-folder
-  git clone git@github.com:Eldonratzlaff/mathmagiciansnew.git
+  git clone git@github.com:git@github.com:Eldonratzlaff/bookstore.git
 ```
 ### Install
 

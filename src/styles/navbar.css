@@ -1,15 +1,16 @@
-.nav-container{
-   background-color: antiquewhite;
-width: 100vw;
+.nav-container {
+  background-color: antiquewhite;
+  width: 100vw;
 }
 
-.nav-links{
-    display: flex;
-    justify-content: space-between;s
-    width: 100%;
-    width: 50%;
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  width: 50%;
 }
-.nav-link{
-    width: 100vw;
-    list-style: none;
+
+.nav-link {
+  width: 100vw;
+  list-style: none;
 }
