@@ -1,8 +1,6 @@
 .book-title,
 .autor {
-  background-color: brown;
-  width: 100%;
+  background-color: rgb(233, 220, 220);
   padding: 12px 20px;
   margin: 8px 0;
-  box-sizing: border-box;
 }
