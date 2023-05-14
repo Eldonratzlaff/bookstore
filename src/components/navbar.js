@@ -1,7 +1,7 @@
 import { Route, Link, Routes } from 'react-router-dom';
 import '../styles/navbar.css';
 import AddBook from './addBook';
-import Books from './books';
+import Books from './book';
 import Categories from './categories';
 
 const navbar = () => (
