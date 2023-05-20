@@ -11,18 +11,18 @@ const navbar = () => (
 
         <ul className="nav-links">
           <li className="nav-link">
-            {' '}
+         
             <Link to="/">Bookstore CMS</Link>
           </li>
           <li className="nav-link">
-            {' '}
+        
             <Link to="Books"> BOOKS </Link>
-            {' '}
+          
           </li>
           <li className="nav-link">
-            {' '}
+          
             <Link to="Categories>">CATEGORIES</Link>
-            {' '}
+         
           </li>
         </ul>
       </nav>
