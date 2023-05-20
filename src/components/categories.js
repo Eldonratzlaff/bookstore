@@ -1,16 +1,4 @@
-
-import '../styles/categories.css';
-
-
-const Categories = () => (
-         <>
-         <div>
-         <h1>Categories</h1>
-         </div>    
-         </>
-     
-    );   
-  
-     
+const Categories = () => {
+};
 
 export default Categories;

@@ -1,41 +1,22 @@
+import {useDispatch} from 'react-redux'
+import PropTypes from 'prop-types'
+import {removeBook} from '../reducers/books'
 
-import Book from './book';
-const BooksList = () => {
-  const books = [
-    {
-      id: 1,
-      genre: 'Action',
-      title: 'The Hunger Games',
-      author: 'Suzanne Collins',
-      progress: '64%',
-      chapter: 'Chapter 17',
-    },
-    {
-      id: 2,
-      genre: 'Fiction',
-      title: 'Dune',
-      author: 'Frank Herbert',
-      progress: '8%',
-      chapter: 'Chapter 3: "A Lesson Learned"',
-    },
-  ];
 
-  return (
-    <div className="booksListContainer">hdstgfghdf
-      <div className="booksList">
-        {books.map((book) => (
-          <Book
-            key={book.id}
-            genre={book.genre}
-            title={book.title}
-            author={book.author}
-            progress={book.progress}
-            chapter={book.chapter}
-          />
-        ))}
-      </div>
-    </div>
-  );
-};
+const Book = ({id, title}) => {
+    const dispatch = useDispatch()
 
-export default BooksList;
+    return (
+        <div>
+            <span>{title}</span>
+            <button onClick={() => dispatch(removeBook(id))}>Remove</button>
+        </div>
+    )
+}
+
+Book.propTypes = {
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+}
+
+export default Book
