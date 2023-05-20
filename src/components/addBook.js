@@ -1,16 +1,31 @@
 import '../styles/addBook.css';
 
-const AddBook = () => (
-  <>
-    <form>
-      <h2>Add New Book</h2>
-      <input className="book-title" type="text" placeholder="Book Title" />
-      <input className="autor" type="text" placeholder="Category" />
-      <button type="submit">ADD BOOK</button>
+import { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { addBook } from '../reducers/books'
 
-    </form>
-  </>
+const AddBook = () => {
+    const dispatch = useDispatch()
+    const [title, setTitle] = useState('')
 
-);
+    const onAddBookClicked = () => {
+        if (title) {
+            dispatch(addBook(title))
+            setTitle('')
+        }
+    }
 
-export default AddBook;
+    return (
+        <div>
+            <input
+                type="text"
+                value={title}
+                onChange={e => setTitle(e.target.value)}
+                placeholder="Enter book title"
+            />
+            <button onClick={onAddBookClicked}>Add Book</button>
+        </div>
+    )
+}
+
+export default AddBook

@@ -1,6 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
 import Navbar from './components/navbar';
-import BooksList from './components/bookitem';
+import BooksList from './components/book';
 
 function App() {
   return (

@@ -3,6 +3,7 @@ import '../styles/navbar.css';
 import AddBook from './addBook';
 import Books from './book';
 import Categories from './categories';
+import Counter from "./counter";
 
 const navbar = () => (
   <>
@@ -21,7 +22,12 @@ const navbar = () => (
           </li>
           <li className="nav-link">
             {' '}
-            <Link to="Categories>">CATEGORIES</Link>
+            <Link to="Categories">CATEGORIES</Link>
+            {' '}
+          </li>
+          <li className="nav-link">
+            {' '}
+            <Link to="Counter">COUNTER</Link>
             {' '}
           </li>
         </ul>
@@ -30,6 +36,7 @@ const navbar = () => (
         <Route path="/" element={<AddBook />} />
         <Route path="/Books" element={<Books />} />
         <Route path="/Categories" element={<Categories />} />
+        <Route path="/Counter" element={<Counter />} />
       </Routes>
     </div>
   </>
