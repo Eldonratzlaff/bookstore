@@ -10,12 +10,8 @@ const AddBook = () => {
 
   const handleAddBook = () => {
     if (title) {
-      const newBook = {
-        title: title,
-        // Add other book properties as needed
-      };
-      dispatch(addBook(newBook));
-      setTitle('');
+        dispatch(addBook(title))
+        setTitle('')
     }
   };
 
